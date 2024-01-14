@@ -1,4 +1,4 @@
-node_modules not included
+node_modules not included in client
 
 users might have to change password to database in config.json
 
