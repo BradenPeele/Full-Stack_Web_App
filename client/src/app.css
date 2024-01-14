@@ -1,0 +1,346 @@
+.app {
+  font-family: Arial;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* NAVBAR */
+
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: mediumseagreen;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logged_in_container {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar button {
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.navbar h1 {
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+}
+
+
+/* Home / Post */
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  border: 1px solid lightgray;
+}
+
+.post:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 30px 0px;
+  cursor: pointer;
+}
+
+.post .title {
+  flex: 20%;
+  background-color: mediumseagreen;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.post .body {
+  flex: 70%;
+  display: grid;
+  place-content: center;
+}
+
+.post .footer {
+  flex: 20%;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: mediumseagreen;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer .username {
+  flex: 50%;
+}
+
+.footer .buttons {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.like_button {
+  color: rgba(178, 176, 176, 0.8);
+}
+.unlike_button {
+  color: white;
+}
+
+.buttons label {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+
+/* Post Page */
+
+
+.post_page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.right {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.right .add_comment_container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 20%;
+}
+
+.add_comment_container input, button {
+  width: 450px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.add_comment_container button {
+  background-color: mediumseagreen;
+  color: white;
+}
+
+.add_comment_container input {
+  border: 2px solid mediumseagreen;
+}
+
+.right .comment_list {
+  flex: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment_list .comment {
+  width: 70%;
+  height: auto;
+  padding: 30px;
+  border: 2px solid mediumseagreen;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#individual {
+  height: 550px;
+  width: 650px;
+}
+
+#individual .title, #individual .footer {
+  font-size: 30px;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+
+
+/* ChangePassword */
+
+
+.change_password_page {
+  width: 100vw;
+  height: 50vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.change_password_page .form_container .title {
+  padding: 20px;
+}
+
+.change_password_page .form_container {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  border: 5px solid mediumseagreen;
+}
+
+.change_password_page .form_container .text_field {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.change_password_page .form_container button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+}
+
+.change_password_page .form_container button:hover {
+  cursor: pointer;
+}
+
+
+/* CreatePost */
+
+
+.create_post_page {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create_post_page .form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border: 5px solid mediumseagreen;
+}
+
+.create_post_page .form_container #input_create_post {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.create_post_page .form_container button {
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  border: none;
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+}
+
+.create_post_page .form_container button:hover {
+  cursor: pointer;
+  background-color: mediumseagreen;
+}
+
+span {
+  color: red;
+}
+
+
+/* Login */
+
+
+.login_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.login_container input, button {
+  width: 300px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.login_container button {
+  background-color: mediumseagreen;
+  color: white;
+}
+
+.login_container input {
+  border: 2px solid mediumseagreen;
+}
+
+
+/* Profile */
+
+
+.info {
+  padding: 5%;
+  padding-left: 5%;
+}
+
+.info h1 {
+  padding-left: 23%;
+}
+
+.info button {
+  margin:0 auto;
+  display:block;
+}
