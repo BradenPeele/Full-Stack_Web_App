@@ -1,6 +1,15 @@
-node_modules not included in client
+Overview
+-users can make posts that display on the home page
+-users can comment on and like posts
+-posts can be deleted, edited
+-comments can be deleted
+-profile for user displays all posts made by them
+-user can change their password
 
-users might have to change password to database in config.json
+
+important
+-node_modules not included in client
+-users might have to change password to database in config.json
 
 
 DB
